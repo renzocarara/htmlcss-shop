@@ -1,0 +1,74 @@
+body {
+    background-color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    border: 1px solid blue;
+}
+
+.vetrina {
+    /* il div row sarà il riferimento per spostare i div panel */
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid black;
+    margin: auto;
+    width: 60%;
+}
+
+.riga {
+    border: 1px solid blue;
+    position: relative;
+}
+
+.panel {
+    border: 1px solid red;
+    background-color: #f2f2f2;
+    margin: 8px 4px;
+    height: 300px;
+    width: 32%;
+}
+
+.panel-left {
+    position: relative;
+}
+
+.panel-center {
+    position: absolute;
+    top: 0px;
+    left: 33.33%;
+}
+
+.panel-right {
+    position: absolute;
+    top: 0px;
+    left: 66.66%;
+}
+
+.badge {
+    border: 1px solid purple;
+    height: 30px;
+    width: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* allineo verticalmente il testo */
+    line-height: 30px;
+    /* allineo orizzontalmente il testo */
+    text-align: center;
+    font-weight: 600;
+}
+
+.bcg-green {
+    background: green;
+}
+
+.bcg-red {
+    background: red;
+}
