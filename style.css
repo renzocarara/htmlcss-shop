@@ -12,33 +12,27 @@ h1 {
 /* centro le immagini orizzontalmente*/
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     width: 70%;
 }
 
-/* contiene 2 righe di prodotti */
 .vetrina {
-    position: relative;
     background-color: #ffffff;
     margin: auto;
     width: 60%;
 }
 
-/* contiene 3 prodotti */
 .riga {
     position: relative;
 }
 
-/* contiene 1 prodotto */
 .panel {
     background-color: #f2f2f2;
     margin-bottom: 15px;
     height: 280px;
     width: 32%;
-    /* setto il colore del testo uguale allo sfondo
-    rendo il testo invisibile */
-    color: #f2f2f2;
+    /* ha z-index più alto di tutti */
+    z-index: 30;
 }
 
 .panel-left {
@@ -69,6 +63,7 @@ img {
     line-height: 30px;
     /* allineo orizzontalmente il testo */
     text-align: center;
+    /* z-index: -10; */
 }
 
 .bcg-green {
@@ -79,13 +74,30 @@ img {
     background: red;
 }
 
-.preferred {
-    position: absolute;
-    bottom: 5px;
-    right: 45%;
+.heart {
+    color: red;
     font-size: 200%;
+    position: absolute;
+    bottom: 30px;
+    /* inizialmente ha index inferiore al suo contenitore panel */
+    /* per cui non sarà visibile */
+    z-index: 20;
+}
+
+.heart-left {
+    right: 82%;
+}
+
+.heart-center {
+    right: 49%;
+}
+
+.heart-right {
+    right: 15%;
 }
 
 .panel:hover {
-    color: red;
+    /* cambio index del panel cosicchè, */
+    /* heart possa apparire */
+    z-index: 10;
 }
