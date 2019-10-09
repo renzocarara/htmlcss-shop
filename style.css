@@ -9,30 +9,36 @@ h1 {
     text-align: center;
 }
 
+/* centro le immagini orizzontalmente*/
 img {
-    border: 1px solid blue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
 }
 
+/* contiene 2 righe di prodotti */
 .vetrina {
-    /* il div row sarà il riferimento per spostare i div panel */
     position: relative;
     background-color: #ffffff;
-    border: 1px solid black;
     margin: auto;
     width: 60%;
 }
 
+/* contiene 3 prodotti */
 .riga {
-    border: 1px solid blue;
     position: relative;
 }
 
+/* contiene 1 prodotto */
 .panel {
-    border: 1px solid red;
     background-color: #f2f2f2;
-    margin: 8px 4px;
-    height: 300px;
+    margin-bottom: 15px;
+    height: 280px;
     width: 32%;
+    /* setto il colore del testo uguale allo sfondo
+    rendo il testo invisibile */
+    color: #f2f2f2;
 }
 
 .panel-left {
@@ -52,17 +58,17 @@ img {
 }
 
 .badge {
-    border: 1px solid purple;
+    color: black;
     height: 30px;
     width: 50px;
     position: absolute;
     right: 0;
     top: 0;
+    font-weight: 600;
     /* allineo verticalmente il testo */
     line-height: 30px;
     /* allineo orizzontalmente il testo */
     text-align: center;
-    font-weight: 600;
 }
 
 .bcg-green {
@@ -71,4 +77,15 @@ img {
 
 .bcg-red {
     background: red;
+}
+
+.preferred {
+    position: absolute;
+    bottom: 5px;
+    right: 45%;
+    font-size: 200%;
+}
+
+.panel:hover {
+    color: red;
 }
