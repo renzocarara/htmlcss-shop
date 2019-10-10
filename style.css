@@ -11,48 +11,42 @@ h1 {
 
 /* centro le immagini orizzontalmente*/
 img {
-    display: block;
-    margin: auto;
+    /* ridimensiono immagine */
     width: 70%;
+}
+
+.bcg-green {
+    background: green;
+}
+
+.bcg-red {
+    background: red;
 }
 
 /* contenitore per tutta la vetrina */
 .vetrina {
-    position: relative;
     background-color: #ffffff;
     margin: auto;
-    width: 60%;
+    width: 80%;
 }
 
 /* contenitore per una riga di prodotti */
 .riga {
-    position: relative;
+    /* all'inerno della riga centro le 3 immagini affiancate */
+    text-align: center;
 }
 
 /* contenitore per un singolo prodotto */
 .panel {
     background-color: #f2f2f2;
-    margin-bottom: 15px;
+    /* do' un po di margine superiore e inferiore ai 3 pannelli */
+    margin: 15px 0;
     height: 280px;
-    width: 32%;
-}
-
-.panel-left {
+    display: inline-block;
     position: relative;
 }
 
-.panel-center {
-    position: absolute;
-    top: 0px;
-    left: 33.33%;
-}
-
-.panel-right {
-    position: absolute;
-    top: 0px;
-    left: 66.66%;
-}
-
+/* badge che mostra lo sconto */
 .badge {
     color: black;
     height: 30px;
@@ -65,14 +59,6 @@ img {
     line-height: 30px;
     /* allineo orizzontalmente il testo */
     text-align: center;
-}
-
-.bcg-green {
-    background: green;
-}
-
-.bcg-red {
-    background: red;
 }
 
 .preferred {
