@@ -16,23 +16,25 @@ img {
     width: 70%;
 }
 
+/* contenitore per tutta la vetrina */
 .vetrina {
+    position: relative;
     background-color: #ffffff;
     margin: auto;
     width: 60%;
 }
 
+/* contenitore per una riga di prodotti */
 .riga {
     position: relative;
 }
 
+/* contenitore per un singolo prodotto */
 .panel {
     background-color: #f2f2f2;
     margin-bottom: 15px;
     height: 280px;
     width: 32%;
-    /* ha z-index più alto di tutti */
-    z-index: 30;
 }
 
 .panel-left {
@@ -63,7 +65,6 @@ img {
     line-height: 30px;
     /* allineo orizzontalmente il testo */
     text-align: center;
-    /* z-index: -10; */
 }
 
 .bcg-green {
@@ -74,30 +75,15 @@ img {
     background: red;
 }
 
-.heart {
-    color: red;
-    font-size: 200%;
+.preferred {
     position: absolute;
-    bottom: 30px;
-    /* inizialmente ha index inferiore al suo contenitore panel */
-    /* per cui non sarà visibile */
-    z-index: 20;
+    bottom: 5px;
+    right: 45%;
+    font-size: 200%;
+    visibility: hidden;
 }
 
-.heart-left {
-    right: 82%;
-}
-
-.heart-center {
-    right: 49%;
-}
-
-.heart-right {
-    right: 15%;
-}
-
-.panel:hover {
-    /* cambio index del panel cosicchè, */
-    /* heart possa apparire */
-    z-index: 10;
+.panel:hover .preferred {
+    color: red;
+    visibility: visible;
 }
